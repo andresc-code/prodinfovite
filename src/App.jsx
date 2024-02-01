@@ -211,6 +211,7 @@ function App() {
         breakLinkClassName={"page-link"}
         activeClassName={"active"}
       />
+
        <div className="row m-2">
         {filterProducts.map((item) => {
           return (
@@ -221,10 +222,18 @@ function App() {
                 title={item.Description}
                 code={item.Code}
                 reference={item.Reference}
+                color={item.Color}
+                group={item.Group}
+                category={item.Category}
+                subcategory={item.Subcategory}
+                collection={item.Collection}
+                provide={item.Provide_Code}
+                gender={item.Gender}
+                status={item.Status}
                 brand={item.Brand}
-                family={item.Category}
-                line={item.Style}
-                prevPrice={item.Price}
+                style={item.Style}
+                rotation={item.Rotation}
+                days_in_store={item.Days_in_store}
                 newPrice={item.Price}
               ></CardProduct>
             
@@ -232,7 +241,25 @@ function App() {
           );
         })}
       </div>
-       
+      <ReactPaginate
+        previousLabel={"previous"}
+        nextLabel={"next"}
+        breakLabel={"..."}
+        pageCount={pageCount}
+        marginPagesDisplayed={2}
+        pageRangeDisplayed={3}
+        onPageChange={handlePageClick}
+        containerClassName={"pagination justify-content-center"}
+        pageClassName={"page-item"}
+        pageLinkClassName={"page-link"}
+        previousClassName={"page-item"}
+        previousLinkClassName={"page-link"}
+        nextClassName={"page-item"}
+        nextLinkClassName={"page-link"}
+        breakClassName={"page-item"}
+        breakLinkClassName={"page-link"}
+        activeClassName={"active"}
+      />
        
       </>
     );

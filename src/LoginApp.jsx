@@ -8,7 +8,6 @@ import logoImg from './ZF3.png';
 import logoImglogin from './imglogin.png';
 import React, { useState } from 'react';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -39,7 +38,7 @@ const Login = () => {
     return (
       <>
         <App />
-        {registerServiceWorker()}
+        
       </>
     );
   }

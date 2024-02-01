@@ -1,0 +1,48 @@
+[
+  { 
+    "title": "Category",
+    "items": [
+      { "title": "Top 100" }
+    ]
+  }, 
+  {
+    "title": "Category",
+    "items": [
+      { "title": "All" },
+      { "title": "T-shirt" },
+      { "title": "Pant" },
+      { "title": "Blouse" }
+    ]
+  },
+  {
+    "title": "Group",
+    "items": [
+      {
+        "title": "Male",
+        "submenu": [
+          { "title": "Blouse" },
+          { "title": "Pant" },
+          { "title": "Jean" },
+          { "title": "Jacket" }
+        ]
+      },
+      {
+        "title": "Female",
+        "submenu": [
+          { "title": "T-shirt" },
+          { "title": "Pant" },
+          { "title": "Jean" },
+          { "title": "Jacket" }
+        ]
+      },
+      {
+        "title": "Accessory",
+        "submenu": [
+          { "title": "Pashmina" },
+          { "title": "Necklace" }
+        ]
+      }
+    ]
+  }
+]
+  
